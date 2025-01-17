@@ -17,6 +17,33 @@
 .display-flex{
     display: flex;
 }
+.bg-primary{
+    background-color:rgba(255, 144, 14, 0.1);
+}
+.primary-btn{
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+.description{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.light-orange{
+    color: #FF900E;
+}
 .dark-1{
     color: #131313;
 }
@@ -43,14 +70,99 @@
 }
 
 /* header start */
+#hero{
+    max-width: 1440px;
+    padding: 50px 0;
+}
 .navbar{
-    
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-text{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
 }
 .nav-links{
     list-style: none;
-    justify-content: space-between;
-    gap: 50px;
+    margin: 0;
+    gap: 30px;
+    
 }
 .nav-link{
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* Banner style */
+.banner-content{
+    max-width: 862px;
+    text-align: center;
+    margin-top: 7.25rem;
+    margin-bottom: 3rem;
+}
+.hero-title{
+    font-size: 4rem;
+    font-weight: 700;  
+}
+.banner-description{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 20px auto;
+}
+.banner-image img{
+    width: 100%;
+}
+
+/* Feature Style */
+#quick-feature{
+    width: 90%;
+    margin: 85px auto;
+}
+.quick-feature-image{
+    width: 60%;
+}
+.quick-feature-image img{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.quick-feature-content{
+    width: 40%;
+    padding: 200px 0;
+}
+#quick{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #727272;
+}
+#fture{
+    color: #FF900E;
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 25px;
+    }
+    /* Quick Feature */
+    #quick-feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .quick-feature-image{
+        width: 100%;
+        text-align: center;
+    }
+    .quick-feature-content{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
 }
