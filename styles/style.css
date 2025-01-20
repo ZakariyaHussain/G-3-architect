@@ -146,6 +146,7 @@
 
 /* Feature Style */
 #feature{
+    max-width: 1440px;
     justify-content: space-between;
     gap: 54px;
 }
